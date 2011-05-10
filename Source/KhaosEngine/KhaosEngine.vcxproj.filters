@@ -36,6 +36,9 @@
     <ClInclude Include="..\..\Include\Utility\RandomNumberGenerator.h">
       <Filter>Utility\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Utility\Optional.h">
+      <Filter>Utility\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

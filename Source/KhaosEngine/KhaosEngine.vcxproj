@@ -152,6 +152,7 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Include\Utility\Optional.h" />
     <ClInclude Include="..\..\Include\Utility\RandomNumberGenerator.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
