@@ -113,7 +113,7 @@
       <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
       <MapExports>false</MapExports>
       <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;D:\Projects\Khaos\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>KhaosEngine_Debug.lib;DXUTOpt_Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>KhaosEngine_Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -157,7 +157,7 @@
       <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
       <MapExports>true</MapExports>
       <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;D:\Projects\Khaos\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>KhaosEngine_Release.lib;DXUTOpt_Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>KhaosEngine_Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
