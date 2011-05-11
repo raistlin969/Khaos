@@ -1,16 +1,7 @@
-#include <Windows.h>
-#include "Utility\Optional.h"
+#include "Testbed/Stdafx.h"
+#include "KhaosEngine/KhaosApp.h"
 
-Optional<int> Calculate()
+int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow)
 {
-	Optional<int> spline;
-	spline = 10;
-  spline.Clear();
-	return spline;
-}
-
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
-{
-	Optional<int> answer = Calculate();
-	return 0;
+	return KhaosEngine(hInstance, hPrevInstance, lpCmdLine, nCmdShow);
 }

@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "KhaosEngine\stdafx.h"
 #include "Utility\RandomNumberGenerator.h"
 #include <time.h>
 

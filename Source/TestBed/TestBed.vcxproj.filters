@@ -23,10 +23,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stdafx.h">
+    <ClInclude Include="..\..\Include\TestBed\Stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TargetVer.h">
+    <ClInclude Include="..\..\Include\TestBed\TargetVer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -27,17 +27,23 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\Utility\RandomNumberGenerator.h">
       <Filter>Utility\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\Utility\Optional.h">
       <Filter>Utility\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KhaosEngine\GccTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KhaosEngine\KhaosApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KhaosEngine\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KhaosEngine\targetver.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +52,12 @@
     </ClCompile>
     <ClCompile Include="Utility\RandomNumberGenerator.cpp">
       <Filter>Utility\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KhaosApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KhaosEngine.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
