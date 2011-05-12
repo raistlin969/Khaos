@@ -27,6 +27,19 @@ public:
   virtual bool InitInstance(HINSTANCE hinstance, LPWSTR command_line, HWND hwnd = NULL, 
                             int screen_width = SCREEN_WIDTH, int screen_height = SCREEN_HEIGHT);
 
+  //directx stuff
+  static HRESULT CALLBACK OnCreateDevice( ID3D11Device* pd3dDevice, const DXGI_SURFACE_DESC* pBackBufferSurfaceDesc, void* pUserContext );
+  static bool CALLBACK IsDeviceAcceptable( const CD3D11EnumAdapterInfo *AdapterInfo, UINT Output, const CD3D11EnumDeviceInfo *DeviceInfo, DXGI_FORMAT BackBufferFormat, bool bWindowed, void* pUserContext );
+  static HRESULT CALLBACK SwapChainResized( ID3D11Device* pd3dDevice, IDXGISwapChain *pSwapChain, const DXGI_SURFACE_DESC* pBackBufferSurfaceDesc, void* pUserContext );
+  static void CALLBACK FrameRender( ID3D11Device* pd3dDevice, ID3D11DeviceContext* pd3dImmediateContext, double fTime, float fElapsedTime, void* pUserContext );
+  static void CALLBACK SwapChainRelease( void* pUserContext );
+  static void CALLBACK OnDestroyDevice( void* pUserContext );
+  static void CALLBACK OnUpdateGame(double fTime, float fElapsedTime, void* pUserContext);
+  static bool CALLBACK ModifyDeviceSettings( DXUTDeviceSettings* pDeviceSettings, void* pUserContext );
+
+  //msg proc
+  static LRESULT CALLBACK MsgProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam, bool* no_further_processing, void* user_context);
+
   //main loop processing
   void AbortGame() { _quitting = true; }
   int GetExitCode() { return DXUTGetExitCode(); }
