@@ -22,17 +22,20 @@
     <Filter Include="Utility\Source Files">
       <UniqueIdentifier>{3b1bd934-476a-4a5b-a7d0-c90b7c46a76d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MainLoop">
+      <UniqueIdentifier>{a6c8440c-e81b-4d09-87de-4f50d66074f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainLoop\Header Files">
+      <UniqueIdentifier>{ac26646b-3093-4182-9c42-74c30557ee6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainLoop\Source Files">
+      <UniqueIdentifier>{aedf2b66-d41c-4997-adcb-e743322057de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Utility\RandomNumberGenerator.h">
-      <Filter>Utility\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Utility\Optional.h">
-      <Filter>Utility\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\KhaosEngine\GccTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -44,6 +47,18 @@
     </ClInclude>
     <ClInclude Include="..\..\Include\KhaosEngine\targetver.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KhaosEngine\MainLoop\Initialization.h">
+      <Filter>MainLoop\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KhaosEngine\Utility\Optional.h">
+      <Filter>Utility\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KhaosEngine\Utility\RandomNumberGenerator.h">
+      <Filter>Utility\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KhaosEngine\Utility\KhaosError.h">
+      <Filter>Utility\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +73,9 @@
     </ClCompile>
     <ClCompile Include="KhaosEngine.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainLoop\Initialization.cpp">
+      <Filter>MainLoop\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

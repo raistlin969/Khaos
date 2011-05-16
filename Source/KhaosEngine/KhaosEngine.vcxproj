@@ -158,14 +158,17 @@
   <ItemGroup>
     <ClInclude Include="..\..\Include\KhaosEngine\GccTypes.h" />
     <ClInclude Include="..\..\Include\KhaosEngine\KhaosApp.h" />
+    <ClInclude Include="..\..\Include\KhaosEngine\MainLoop\Initialization.h" />
     <ClInclude Include="..\..\Include\KhaosEngine\stdafx.h" />
     <ClInclude Include="..\..\Include\KhaosEngine\targetver.h" />
-    <ClInclude Include="..\..\Include\Utility\Optional.h" />
-    <ClInclude Include="..\..\Include\Utility\RandomNumberGenerator.h" />
+    <ClInclude Include="..\..\Include\KhaosEngine\Utility\KhaosError.h" />
+    <ClInclude Include="..\..\Include\KhaosEngine\Utility\Optional.h" />
+    <ClInclude Include="..\..\Include\KhaosEngine\Utility\RandomNumberGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="KhaosApp.cpp" />
     <ClCompile Include="KhaosEngine.cpp" />
+    <ClCompile Include="MainLoop\Initialization.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

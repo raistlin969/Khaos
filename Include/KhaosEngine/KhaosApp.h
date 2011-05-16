@@ -23,9 +23,18 @@ protected:
 public:
   KhaosApp();
 
+  HWND GetHwnd();
+  HINSTANCE GetInstance() { return _hinstance; }
+
   //virtuals
   virtual bool InitInstance(HINSTANCE hinstance, LPWSTR command_line, HWND hwnd = NULL, 
                             int screen_width = SCREEN_WIDTH, int screen_height = SCREEN_HEIGHT);
+
+
+  //pure virtuals
+  virtual TCHAR* GetGameTitle() = 0;
+  virtual TCHAR* GetGameAppDirectory() = 0;
+  virtual HICON GetIcon() = 0;
 
   //directx stuff
   static HRESULT CALLBACK OnCreateDevice( ID3D11Device* pd3dDevice, const DXGI_SURFACE_DESC* pBackBufferSurfaceDesc, void* pUserContext );
